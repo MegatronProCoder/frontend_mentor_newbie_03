@@ -43,22 +43,31 @@ a{
     font-family: "Big Shoulders Display", sans-serif;
 }
 .card a{
+    color: var(--parent-bg-color);
+    background-color: white;
     border: white 2px solid;
     margin-top: auto;
     padding: 1em 2em;
     border-radius: 2em;
     align-self: flex-start;
 }
+.card a:hover{
+    background-color: unset;
+    color: unset;
+}
 .orange-card{
     background-color: #E28525;
+    --parent-bg-color: #E28525;
     /* border-radius: 10px 10px 0 0;   */
     
 }
 .green-card{
-    background-color: #016972;   
+    background-color: #016972;
+    --parent-bg-color:#016972;
 }
 .darkgreen-card{
     background-color: #00403F;
+    --parent-bg-color:#00403F;
     /* border-radius: 0 0 10px 10px;   */
 }
 @media (max-width : 850px){
